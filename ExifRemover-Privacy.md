@@ -1,4 +1,4 @@
-# Privacy Policy
+# Exif Remover: Privacy Policy
 
 **Last updated:** December 23, 2025
 
