@@ -1,1 +1,0 @@
-# merturhan.github.io
