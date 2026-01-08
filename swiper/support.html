@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Swiper App Support - Get help, FAQs, and contact information">
+    <title>Swiper - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #000000;
+            --bg-gradient-1: rgba(0, 0, 0, 1);
+            --bg-gradient-2: rgba(10, 10, 10, 1);
+            --bg-gradient-3: rgba(5, 5, 5, 1);
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --glass-bg-hover: rgba(255, 255, 255, 0.12);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.8);
+            --text-tertiary: rgba(255, 255, 255, 0.6);
+            --accent-blue: #ffffff;
+            --accent-purple: #ffffff;
+            --accent-green: #ffffff;
+            --accent-red: #ffffff;
+            --shadow-glow: rgba(255, 255, 255, 0.2);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-1) 0%, var(--bg-gradient-2) 50%, var(--bg-gradient-3) 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        /* Glass Card */
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(30px) saturate(180%);
+            -webkit-backdrop-filter: blur(30px) saturate(180%);
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            background: var(--glass-bg-hover);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 18px;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            margin-top: 15px;
+        }
+
+        .contact-info a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 15px;
+            border-left: 3px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-left-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .faq-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .faq-item ul {
+            margin-left: 20px;
+            margin-top: 10px;
+            color: var(--text-secondary);
+        }
+
+        .faq-item li {
+            margin-bottom: 8px;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--text-primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* App Info */
+        .app-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .info-item {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .info-item strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .info-item span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .app-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Highlight */
+        .highlight {
+            color: var(--text-primary);
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📸 Swiper</h1>
+            <p>Support & Help Center</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="card">
+            <h2>
+                <span class="icon">✉️</span>
+                Contact Us
+            </h2>
+            <p>Need help? We're here for you! Reach out to us and we'll get back to you as soon as possible.</p>
+            <div class="contact-info">
+                <span>📧</span>
+                <div>
+                    <strong>Email Support:</strong><br>
+                    <a href="mailto:merturhan2k@proton.me?subject=Swiper App Support" style="color: var(--text-primary);">merturhan2k@proton.me</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="card">
+            <h2>
+                <span class="icon">❓</span>
+                Frequently Asked Questions
+            </h2>
+
+            <div class="faq-item">
+                <h4>How do I use Swiper?</h4>
+                <p>Swiper helps you quickly organize your photo library by swiping through photos. Swipe <span class="highlight">left</span> to mark photos for deletion, or swipe <span class="highlight">right</span> to keep them. Once you're done reviewing photos, tap the finish button to delete all selected photos at once.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What are the photo deletion limits?</h4>
+                <p>Free users can delete up to <span class="highlight">40 photos per day</span>. Premium subscribers enjoy <span class="highlight">unlimited deletions</span> with no daily restrictions.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What are the Premium subscription benefits?</h4>
+                <ul class="feature-list">
+                    <li>Unlimited photo deletions per day</li>
+                    <li>No daily limits or restrictions</li>
+                    <li>Priority support</li>
+                    <li>Access to all premium features</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I restore my Premium purchase?</h4>
+                <p>If you've previously purchased Premium on another device or after reinstalling the app, you can restore your purchase:</p>
+                <ul>
+                    <li>Open the Settings tab in the app</li>
+                    <li>Tap on the Premium section</li>
+                    <li>Tap "Restore Purchases"</li>
+                    <li>Your Premium status will be restored if you have an active subscription</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h4>Why does the app need Photo Library access?</h4>
+                <p>Swiper needs access to your Photo Library to:</p>
+                <ul>
+                    <li>Display your photos for review</li>
+                    <li>Allow you to delete unwanted photos</li>
+                    <li>Organize and manage your photo collection</li>
+                </ul>
+                <p>All photos remain on your device. We never upload, store, or access your photos on any server. Your privacy is our priority.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I grant Photo Library permissions?</h4>
+                <p>When you first open Swiper, you'll be prompted to grant Photo Library access. If you've denied access previously:</p>
+                <ul>
+                    <li>Go to your device Settings</li>
+                    <li>Find "Swiper" in the app list</li>
+                    <li>Tap on "Photos"</li>
+                    <li>Select "Read and Write" or "All Photos"</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h4>The app isn't showing my photos. What should I do?</h4>
+                <p>If photos aren't appearing:</p>
+                <ul>
+                    <li>Check that Photo Library permissions are granted in Settings</li>
+                    <li>Try closing and reopening the app</li>
+                    <li>Check your selected album filter in Settings</li>
+                    <li>Ensure you have photos in your library</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h4>Can I undo a deletion?</h4>
+                <p>Unfortunately, once photos are deleted, they cannot be recovered through the app. However, if you have iCloud Photos enabled, deleted photos may be recoverable from the "Recently Deleted" album in the Photos app for up to 30 days.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I change photo sorting or filter by album?</h4>
+                <p>You can customize how photos are displayed:</p>
+                <ul>
+                    <li>Go to the Settings tab</li>
+                    <li>Under "Photo Settings", adjust the sort option (newest first or oldest first)</li>
+                    <li>Select a specific album to filter photos, or choose "All Photos"</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Getting Help Section -->
+        <div class="card">
+            <h2>
+                <span class="icon">🛠️</span>
+                Getting Help
+            </h2>
+            <h3>Reporting Bugs</h3>
+            <p>Found a bug? Please email us at <a href="mailto:merturhan2k@proton.me?subject=Bug Report" style="color: var(--text-primary);">merturhan2k@proton.me</a> with:</p>
+            <ul>
+                <li>Description of the issue</li>
+                <li>Steps to reproduce the problem</li>
+                <li>Your device model and iOS version</li>
+                <li>App version (found in Settings)</li>
+            </ul>
+
+            <h3>Feature Requests</h3>
+            <p>Have an idea for a new feature? We'd love to hear it! Send your suggestions to <a href="mailto:merturhan2k@proton.me?subject=Feature Request" style="color: var(--text-primary);">merturhan2k@proton.me</a>.</p>
+
+            <h3>General Support</h3>
+            <p>For any other questions or concerns, don't hesitate to reach out. We typically respond within 24-48 hours.</p>
+        </div>
+
+        <!-- App Information -->
+        <div class="card">
+            <h2>
+                <span class="icon">ℹ️</span>
+                App Information
+            </h2>
+            <div class="app-info">
+                <div class="info-item">
+                    <strong>Developer</strong>
+                    <span>Mert Urhan</span>
+                </div>
+                <div class="info-item">
+                    <strong>Platform</strong>
+                    <span>iOS</span>
+                </div>
+                <div class="info-item">
+                    <strong>Category</strong>
+                    <span>Utility</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Swiper. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy-policy.html" style="color: var(--text-primary); text-decoration: none; opacity: 0.8;">Privacy Policy</a> | 
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" style="color: var(--text-primary); text-decoration: none; opacity: 0.8;" target="_blank">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Swiper App Privacy Policy - Learn how we collect, use, and protect your data">
+    <title>Swiper - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #000000;
+            --bg-gradient-1: rgba(0, 0, 0, 1);
+            --bg-gradient-2: rgba(10, 10, 10, 1);
+            --bg-gradient-3: rgba(5, 5, 5, 1);
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --glass-bg-hover: rgba(255, 255, 255, 0.12);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.8);
+            --text-tertiary: rgba(255, 255, 255, 0.6);
+            --accent-blue: #ffffff;
+            --accent-purple: #ffffff;
+            --accent-green: #ffffff;
+            --accent-red: #ffffff;
+            --shadow-glow: rgba(255, 255, 255, 0.2);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-1) 0%, var(--bg-gradient-2) 50%, var(--bg-gradient-3) 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .last-updated {
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        /* Glass Card */
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(30px) saturate(180%);
+            -webkit-backdrop-filter: blur(30px) saturate(180%);
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            background: var(--glass-bg-hover);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 18px;
+        }
+
+        /* Content */
+        .card p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .card ul, .card ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+
+        .card li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-left: 3px solid rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .info-item {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .info-item strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .info-item span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            margin-top: 15px;
+        }
+
+        .contact-info a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: var(--text-primary);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer a:hover {
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Emphasis */
+        .emphasis {
+            color: var(--text-primary);
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Privacy Policy</h1>
+            <p>Swiper App</p>
+            <p class="last-updated">Last Updated: January 2026</p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="card">
+            <h2>
+                <span class="icon">📋</span>
+                Introduction
+            </h2>
+            <p>Welcome to Swiper ("we," "our," or "us"). We are committed to protecting your privacy and ensuring transparency about how we collect, use, and protect your information. This Privacy Policy explains our practices regarding data collection and usage when you use our mobile application.</p>
+            <p>By using Swiper, you agree to the collection and use of information in accordance with this policy. We do not collect, store, or transmit your personal photos or data to any external servers.</p>
+        </div>
+
+        <!-- Information We Collect -->
+        <div class="card">
+            <h2>
+                <span class="icon">📊</span>
+                Information We Collect
+            </h2>
+            
+            <h3>Photo Library Access</h3>
+            <p>Swiper requires access to your device's Photo Library to function. We request <span class="emphasis">read and write permissions</span> to:</p>
+            <ul>
+                <li>Display your photos for review within the app</li>
+                <li>Allow you to delete photos you no longer want</li>
+                <li>Organize and manage your photo collection</li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>Important:</strong> All photos remain on your device. We never upload, store, transmit, or access your photos on any external server or cloud service. Your photos are processed locally on your device only.</p>
+            </div>
+
+            <h3>Usage Statistics</h3>
+            <p>We collect minimal usage data stored locally on your device:</p>
+            <ul>
+                <li>Number of photos deleted (for daily limit tracking)</li>
+                <li>Number of photos kept</li>
+                <li>Photo sorting preferences</li>
+                <li>Selected album filters</li>
+            </ul>
+            <p>This data is stored locally using iOS UserDefaults and is never transmitted to external servers.</p>
+
+            <h3>Subscription Information</h3>
+            <p>If you purchase a Premium subscription, subscription management is handled by RevenueCat, a third-party service. RevenueCat may collect:</p>
+            <ul>
+                <li>Purchase transaction information</li>
+                <li>Subscription status and expiration dates</li>
+                <li>Device identifiers (for subscription validation)</li>
+            </ul>
+            <p>We do not have access to your payment information, which is processed securely through Apple's App Store.</p>
+        </div>
+
+        <!-- How We Use Your Information -->
+        <div class="card">
+            <h2>
+                <span class="icon">⚙️</span>
+                How We Use Your Information
+            </h2>
+            <p>We use the information we collect solely for the following purposes:</p>
+            <ul>
+                <li><strong>App Functionality:</strong> To provide core features like displaying photos, enabling deletion, and managing your photo library</li>
+                <li><strong>Local Storage:</strong> To remember your preferences (sort order, selected album) for a better user experience</li>
+                <li><strong>Subscription Management:</strong> To verify and manage your Premium subscription status through RevenueCat</li>
+                <li><strong>Daily Limits:</strong> To track deletion counts for free users (40 photos per day limit)</li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>We do not:</strong> Sell your data, share your information with third parties for advertising, use your photos for any purpose other than local display and deletion, or track your activity across other apps or websites.</p>
+            </div>
+        </div>
+
+        <!-- Data Storage -->
+        <div class="card">
+            <h2>
+                <span class="icon">💾</span>
+                Data Storage
+            </h2>
+            <h3>Local Storage Only</h3>
+            <p>All data collected by Swiper is stored locally on your device using iOS UserDefaults. This includes:</p>
+            <ul>
+                <li>Usage statistics (deletion counts, kept photos)</li>
+                <li>App preferences (sort order, album selection)</li>
+                <li>Onboarding completion status</li>
+            </ul>
+
+            <h3>No Cloud Storage</h3>
+            <p>We do not store any of your data on external servers or cloud services. Your photos, preferences, and usage data remain exclusively on your device.</p>
+
+            <h3>Photos Remain on Device</h3>
+            <p>Your photos are never uploaded or transmitted anywhere. They remain in your device's Photo Library, and when you delete photos through Swiper, they are deleted from your device's Photo Library only.</p>
+        </div>
+
+        <!-- Third-Party Services -->
+        <div class="card">
+            <h2>
+                <span class="icon">🔗</span>
+                Third-Party Services
+            </h2>
+            <p>Swiper uses the following third-party services:</p>
+
+            <h3>RevenueCat</h3>
+            <p>We use RevenueCat to manage Premium subscriptions. RevenueCat's privacy practices are governed by their own Privacy Policy. RevenueCat may collect:</p>
+            <ul>
+                <li>Device identifiers for subscription validation</li>
+                <li>Purchase and subscription status information</li>
+                <li>App usage analytics (anonymized)</li>
+            </ul>
+            <p>For more information, please review <a href="https://www.revenuecat.com/privacy" target="_blank" style="color: var(--text-primary);">RevenueCat's Privacy Policy</a>.</p>
+
+            <h3>Apple App Store</h3>
+            <p>Subscriptions are processed through Apple's App Store. Apple handles all payment processing and may collect payment information in accordance with their privacy policy. We do not have access to your payment details.</p>
+
+            <h3>Apple Services</h3>
+            <p>As an iOS app, Swiper operates within Apple's ecosystem and may use Apple's standard services (such as iCloud for app data backup if enabled by you). This is subject to Apple's privacy policies.</p>
+        </div>
+
+        <!-- Your Rights -->
+        <div class="card">
+            <h2>
+                <span class="icon">👤</span>
+                Your Rights
+            </h2>
+            <p>You have the following rights regarding your data:</p>
+
+            <h3>Access to Your Data</h3>
+            <p>All data stored by Swiper is accessible through your device. You can view and manage your app preferences directly within the app's Settings.</p>
+
+            <h3>Deletion of Data</h3>
+            <p>You can delete all locally stored data at any time:</p>
+            <ul>
+                <li>Reset statistics: Go to Settings → Data → Reset Statistics</li>
+                <li>Reset kept photos: Go to Settings → Data → Reset Kept Photos</li>
+                <li>Uninstall the app: Deleting the app will remove all locally stored data</li>
+            </ul>
+
+            <h3>Revoke Photo Library Access</h3>
+            <p>You can revoke Photo Library access at any time through your device Settings:</p>
+            <ul>
+                <li>Go to Settings → Privacy & Security → Photos</li>
+                <li>Find "Swiper" in the list</li>
+                <li>Change the permission to "None" or remove the app</li>
+            </ul>
+            <p>Note: Revoking access will prevent the app from functioning, as it requires Photo Library access to operate.</p>
+
+            <h3>Subscription Cancellation</h3>
+            <p>You can cancel your Premium subscription at any time through your Apple App Store account settings. Cancellation will take effect at the end of your current billing period.</p>
+        </div>
+
+        <!-- Children's Privacy -->
+        <div class="card">
+            <h2>
+                <span class="icon">👶</span>
+                Children's Privacy
+            </h2>
+            <p>Swiper is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+            <p>If we discover that we have collected information from a child under 13, we will delete that information promptly.</p>
+        </div>
+
+        <!-- Changes to Privacy Policy -->
+        <div class="card">
+            <h2>
+                <span class="icon">📝</span>
+                Changes to This Privacy Policy
+            </h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by:</p>
+            <ul>
+                <li>Posting the new Privacy Policy on this page</li>
+                <li>Updating the "Last Updated" date at the top of this policy</li>
+                <li>Informing you through the app if significant changes are made</li>
+            </ul>
+            <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="card">
+            <h2>
+                <span class="icon">📧</span>
+                Contact Us
+            </h2>
+            <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+            <div class="contact-info">
+                <span>✉️</span>
+                <div>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:merturhan2k@proton.me?subject=Privacy Policy Inquiry" style="color: var(--text-primary);">merturhan2k@proton.me</a>
+                </div>
+            </div>
+            <p style="margin-top: 20px;">We will respond to your privacy-related inquiries within a reasonable timeframe.</p>
+        </div>
+
+        <!-- Legal Information -->
+        <div class="card">
+            <h2>
+                <span class="icon">⚖️</span>
+                Legal Information
+            </h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Developer</strong>
+                    <span>Mert Urhan</span>
+                </div>
+                <div class="info-item">
+                    <strong>Platform</strong>
+                    <span>iOS</span>
+                </div>
+                <div class="info-item">
+                    <strong>Data Controller</strong>
+                    <span>Mert Urhan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Swiper. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="support.html">Support</a> | 
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
