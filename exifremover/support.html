@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EXIF Remover – Support</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --card: #f9fafb;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                   "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      animation: fadeIn 0.6s ease-out both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    header {
+      margin-bottom: 40px;
+      animation: slideDown 0.6s ease-out both;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      animation: fadeUp 0.5s ease-out both;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.05s; }
+    section:nth-of-type(2) { animation-delay: 0.1s; }
+    section:nth-of-type(3) { animation-delay: 0.15s; }
+    section:nth-of-type(4) { animation-delay: 0.2s; }
+    section:nth-of-type(5) { animation-delay: 0.25s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 12px 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.8rem; }
+      section { padding: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>EXIF Remover – Support</h1>
+      <div class="updated">Last updated: December 23, 2025</div>
+    </header>
+
+    <section>
+      <p>
+        Thank you for using <strong>EXIF Remover</strong>.
+        This page explains how to get help, troubleshoot common issues,
+        and manage your subscription.
+      </p>
+    </section>
+
+    <section>
+      <h2>📩 Contact</h2>
+      <p>If you need help, have questions, or want to share feedback:</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:merturhan2k@proton.me">merturhan2k@proton.me</a>
+      </p>
+      <p>
+        You can also contact us through the App Store support page.
+      </p>
+      <p>
+        <strong>Note:</strong> Please do not send personal or sensitive images.
+        We never need your photos to provide support.
+      </p>
+    </section>
+
+    <section>
+      <h2>🛠️ Troubleshooting</h2>
+
+      <p><strong>Images are not saving back to Photos</strong></p>
+      <ul>
+        <li>Ensure Photo Library permission is granted</li>
+        <li>Confirm “Add to Photos” access is enabled</li>
+        <li>Check that iCloud Photos is not actively syncing a large library</li>
+      </ul>
+      <p>
+        You can re-enable permissions at:<br />
+        <strong>Settings → Privacy & Security → Photos → EXIF Remover</strong>
+      </p>
+
+      <p><strong>⚠️ Daily limit reached</strong></p>
+      <p>
+        Free users have a daily processing limit.
+        You can wait until the next day or upgrade to Premium to remove limits.
+      </p>
+
+      <p><strong>🔒 Premium purchased but not activated</strong></p>
+      <ol>
+        <li>Open EXIF Remover</li>
+        <li>Go to <strong>Settings</strong></li>
+        <li>Tap <strong>Restore Purchases</strong></li>
+      </ol>
+      <p>
+        Premium access is handled through Apple In-App Purchases and RevenueCat.
+      </p>
+    </section>
+
+    <section>
+      <h2>💳 Subscription & Billing</h2>
+      <ul>
+        <li>Payments are processed by Apple</li>
+        <li>
+          Manage or cancel subscriptions via:<br />
+          <strong>Settings → Apple ID → Subscriptions</strong>
+        </li>
+        <li>Refunds are handled directly by Apple</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🔐 Privacy</h2>
+      <ul>
+        <li>All EXIF removal happens on your device</li>
+        <li>Your photos are never uploaded</li>
+        <li>No personal data is collected</li>
+        <li>Usage counters are stored locally only</li>
+      </ul>
+      <p>
+        View the full Privacy Policy:<br />
+        <a href="https://merturhan.github.io/exifremover/privacy-policy" target="_blank" rel="noopener noreferrer">
+          EXIF Remover Privacy Policy
+        </a>
+      </p>
+    </section>
+
+    <section>
+      <h2>👶 Children’s Use</h2>
+      <p>
+        EXIF Remover is not intended for children under 13.
+        We do not knowingly collect personal information.
+      </p>
+    </section>
+
+    <section>
+      <h2>🧭 Version Support</h2>
+      <p>Currently supported:</p>
+      <ul>
+        <li>iOS 16 and later</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🙌 Feedback</h2>
+      <p>
+        We welcome feature requests and suggestions.
+        Feel free to email us at:
+      </p>
+      <p>
+        👉 <a href="mailto:merturhan2k@proton.me">merturhan2k@proton.me</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2025 EXIF Remover. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
