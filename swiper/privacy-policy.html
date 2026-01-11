@@ -317,6 +317,14 @@
             </ul>
             <p>This data is stored locally using iOS UserDefaults and is never transmitted to external servers.</p>
 
+            <h3>Analytics and Diagnostics</h3>
+            <p>To help us understand app performance and improve stability and features, we use Firebase services that may collect the following types of information:</p>
+            <ul>
+                <li><strong>Firebase Analytics:</strong> Aggregated usage information such as screen views, session duration, device model, OS version, and basic interaction events (e.g., button taps). We do not collect your personal photos or their contents.</li>
+                <li><strong>Firebase Crashlytics:</strong> Crash reports and diagnostics, which can include device model, OS version, app version, stack traces, and non-personal device identifiers to help us identify and fix issues.</li>
+            </ul>
+            <p>These analytics and diagnostics are used solely to monitor app performance, troubleshoot problems, and guide product improvements. We do not use this data for advertising purposes.</p>
+
             <h3>Subscription Information</h3>
             <p>If you purchase a Premium subscription, subscription management is handled by RevenueCat, a third-party service. RevenueCat may collect:</p>
             <ul>
@@ -338,10 +346,15 @@
                 <li><strong>App Functionality:</strong> To provide core features like displaying photos, enabling deletion, and managing your photo library</li>
                 <li><strong>Local Storage:</strong> To remember your preferences (sort order, selected album) for a better user experience</li>
                 <li><strong>Subscription Management:</strong> To verify and manage your Premium subscription status through RevenueCat</li>
+                <li><strong>Analytics:</strong> To understand how features are used and improve the app using aggregated, non-identifying information collected via Firebase Analytics</li>
+                <li><strong>Crash Diagnostics:</strong> To monitor stability and resolve issues using crash reports collected via Firebase Crashlytics</li>
                 <li><strong>Daily Limits:</strong> To track deletion counts for free users (40 photos per day limit)</li>
             </ul>
             <div class="highlight-box">
                 <p><strong>We do not:</strong> Sell your data, share your information with third parties for advertising, use your photos for any purpose other than local display and deletion, or track your activity across other apps or websites.</p>
+            </div>
+            <div class="highlight-box">
+                <p><strong>Your Controls:</strong> Where applicable, you can manage analytics permissions in your device Settings. If we provide an in-app setting to limit analytics, it will affect future data collection but will not delete previously collected, aggregated data.</p>
             </div>
         </div>
 
@@ -362,6 +375,9 @@
             <h3>No Cloud Storage</h3>
             <p>We do not store any of your data on external servers or cloud services. Your photos, preferences, and usage data remain exclusively on your device.</p>
 
+            <h3>Third-Party Processing for Diagnostics and Analytics</h3>
+            <p>While your photos and app preferences remain on your device, certain diagnostics and analytics data (such as crash reports and aggregated usage metrics) may be processed by Firebase on their servers to provide analytics and crash reporting services. This data does not include your personal photos.</p>
+
             <h3>Photos Remain on Device</h3>
             <p>Your photos are never uploaded or transmitted anywhere. They remain in your device's Photo Library, and when you delete photos through Swiper, they are deleted from your device's Photo Library only.</p>
         </div>
@@ -373,6 +389,15 @@
                 Third-Party Services
             </h2>
             <p>Swiper uses the following third-party services:</p>
+
+            <h3>Firebase (Analytics, Remote Config, Crashlytics)</h3>
+            <p>We use Google Firebase to help us analyze app usage, manage remote configuration, and diagnose crashes. Firebase may collect device and app information such as device model, OS version, app version, coarse location (if provided by the OS), and identifiers used for analytics and crash reporting. We do not share your personal photos with Firebase.</p>
+            <ul>
+                <li><strong>Firebase Analytics:</strong> Provides aggregated usage data to help us understand feature usage and improve the app.</li>
+                <li><strong>Firebase Remote Config:</strong> Allows us to remotely toggle or configure features and content without requiring an app update.</li>
+                <li><strong>Firebase Crashlytics:</strong> Provides crash reports and diagnostics to improve app stability.</li>
+            </ul>
+            <p>For more information, please review <a href="https://policies.google.com/privacy" target="_blank" style="color: var(--text-primary);">Google's Privacy Policy</a> and the <a href="https://firebase.google.com/support/privacy" target="_blank" style="color: var(--text-primary);">Firebase Privacy and Security</a> documentation.</p>
 
             <h3>RevenueCat</h3>
             <p>We use RevenueCat to manage Premium subscriptions. RevenueCat's privacy practices are governed by their own Privacy Policy. RevenueCat may collect:</p>
@@ -387,7 +412,7 @@
             <p>Subscriptions are processed through Apple's App Store. Apple handles all payment processing and may collect payment information in accordance with their privacy policy. We do not have access to your payment details.</p>
 
             <h3>Apple Services</h3>
-            <p>As an iOS app, Swiper operates within Apple's ecosystem and may use Apple's standard services (such as iCloud for app data backup if enabled by you). This is subject to Apple's privacy policies.</p>
+            <p>As an iOS app, Swiper operates within Apple's ecosystem and may use Apple's standard services (such as iCloud for app data backup if enabled by you). This is subject to Apple's privacy policies. Analytics collection respects your device privacy settings (for example, Limit Ad Tracking and system analytics settings).</p>
         </div>
 
         <!-- Your Rights -->
