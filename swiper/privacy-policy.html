@@ -317,6 +317,19 @@
             </ul>
             <p>This data is stored locally using iOS UserDefaults and is never transmitted to external servers.</p>
 
+            <h3>Notifications</h3>
+            <p>Swiper may request permission to send you notifications. Notifications can be <span class="emphasis">local</span> (scheduled by the app on your device) or <span class="emphasis">push</span> (delivered via Apple's Push Notification service). We use notifications to:</p>
+            <ul>
+                <li>Remind you to review and organize your photos</li>
+                <li>Inform you about feature updates or tips</li>
+                <li>Notify you about subscription status changes (e.g., renewal reminders)
+                </li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>Data and Permissions:</strong> If you enable notifications, your device may generate a push notification token. If used, this token is a device-specific identifier for delivering push notifications and does not contain personal information. We do not include your personal photos or their contents in notifications.</p>
+            </div>
+            <p>You can control notification permissions at any time in your device Settings. Disabling notifications will prevent future alerts but will not affect your ability to use the app.</p>
+
             <h3>Analytics and Diagnostics</h3>
             <p>To help us understand app performance and improve stability and features, we use Firebase services that may collect the following types of information:</p>
             <ul>
@@ -349,6 +362,7 @@
                 <li><strong>Analytics:</strong> To understand how features are used and improve the app using aggregated, non-identifying information collected via Firebase Analytics</li>
                 <li><strong>Crash Diagnostics:</strong> To monitor stability and resolve issues using crash reports collected via Firebase Crashlytics</li>
                 <li><strong>Daily Limits:</strong> To track deletion counts for free users (40 photos per day limit)</li>
+                <li><strong>Notifications:</strong> To send optional reminders, tips, and subscription-related alerts if you grant notification permission</li>
             </ul>
             <div class="highlight-box">
                 <p><strong>We do not:</strong> Sell your data, share your information with third parties for advertising, use your photos for any purpose other than local display and deletion, or track your activity across other apps or websites.</p>
@@ -374,6 +388,9 @@
 
             <h3>No Cloud Storage</h3>
             <p>We do not store any of your data on external servers or cloud services. Your photos, preferences, and usage data remain exclusively on your device.</p>
+
+            <h3>Notification Tokens</h3>
+            <p>If you opt in to push notifications, your device may generate a push notification token to enable delivery via Apple's Push Notification service (APNs). This token may be processed by our notification provider solely for the purpose of sending notifications and is not used to identify you personally. You can revoke notification permission at any time in Settings.</p>
 
             <h3>Third-Party Processing for Diagnostics and Analytics</h3>
             <p>While your photos and app preferences remain on your device, certain diagnostics and analytics data (such as crash reports and aggregated usage metrics) may be processed by Firebase on their servers to provide analytics and crash reporting services. This data does not include your personal photos.</p>
@@ -411,6 +428,9 @@
             <h3>Apple App Store</h3>
             <p>Subscriptions are processed through Apple's App Store. Apple handles all payment processing and may collect payment information in accordance with their privacy policy. We do not have access to your payment details.</p>
 
+            <h3>Apple Push Notification service (APNs)</h3>
+            <p>For push notifications, we use Apple's Push Notification service (APNs). APNs uses a device-specific token to route notifications to your device. This token does not reveal your identity or the contents of your photos. Notification delivery respects your system settings and preferences.</p>
+
             <h3>Apple Services</h3>
             <p>As an iOS app, Swiper operates within Apple's ecosystem and may use Apple's standard services (such as iCloud for app data backup if enabled by you). This is subject to Apple's privacy policies. Analytics collection respects your device privacy settings (for example, Limit Ad Tracking and system analytics settings).</p>
         </div>
@@ -442,6 +462,13 @@
                 <li>Change the permission to "None" or remove the app</li>
             </ul>
             <p>Note: Revoking access will prevent the app from functioning, as it requires Photo Library access to operate.</p>
+
+            <h3>Manage Notifications</h3>
+            <p>You can change notification preferences at any time:</p>
+            <ul>
+                <li>Go to Settings → Notifications → Swiper</li>
+                <li>Choose the types of notifications you want to receive or turn them off entirely</li>
+            </ul>
 
             <h3>Subscription Cancellation</h3>
             <p>You can cancel your Premium subscription at any time through your Apple App Store account settings. Cancellation will take effect at the end of your current billing period.</p>
